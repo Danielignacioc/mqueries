@@ -7,9 +7,10 @@
 aside {
     grid-area: navegacion;
     display: grid;
-    padding: 30px 10px;
-    border: solid black 5px;
+    padding: 10px 10px;
+    border: solid black 2px;
     background-color: darkblue;
+    color: white;
 }
 
 aside ul {
@@ -47,8 +48,9 @@ menu {
 }
 
 main {
-    padding: 25px 40px;
     grid-area: productos;
+    display: grid;
+    padding: 25px 40px;
     display: grid;
 }
 
@@ -68,7 +70,7 @@ main {
 
 .productos__producto p {
     margin-bottom: 5px;
-} 
+}
 
 .btn {
     height: 35px;
@@ -83,19 +85,44 @@ main {
     transition: .5s;
     background-color: #0b0349;
 }
+
+footer {
+    grid-area: pie;
+    display: grid;
+}
+
 @media (min-width: 576px) {
 
+    body {
+        grid-template-areas:
+        "navegacion ftr"
+        "navegacion productos"
+        "navegacion productos"
+        "pie productos";
+    }
+    .ftr{
+        display:flex;
+        flex-direction: column;
+        /* grid-template-rows: calc(100% - 210px); */
+    }
     aside {
         width: 30%;
         height: 100vh;
     }
+
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+
+    }
+
     aside ul {
         display: flex;
         flex-direction: column;
         list-style: none;
-    } 
+    }
 
-    .as-nav i {
+    .as-nav .fa-bars {
         display: none;
     }
 }
