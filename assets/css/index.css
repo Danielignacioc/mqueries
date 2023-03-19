@@ -92,7 +92,7 @@ footer {
 }
 
 @media (min-width: 576px) {
-
+/* USAR BIEN GRID TEMPLATES AREAS */
     body {
         grid-template-areas:
         "navegacion ftr"
@@ -100,10 +100,13 @@ footer {
         "navegacion productos"
         "pie productos";
     }
+
+
+    /* ARREFLAR FTR PARA QUE SUBA AL LADO DEL ASIDE */
     .ftr{
         display:flex;
         flex-direction: column;
-        /* grid-template-rows: calc(100% - 210px); */
+        /* grid-template-rows: calc(100% - 210px); */   /* ES NECESARIO ? */
     }
     aside {
         width: 30%;
