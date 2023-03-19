@@ -89,8 +89,19 @@ main {
 footer {
     grid-area: pie;
     display: grid;
+    background-color: darkblue;
+    color: white;
+}
+.pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
+.pie__ico {
+    font-size: 20px;
+}
 @media (min-width: 576px) {
 /* USAR BIEN GRID TEMPLATES AREAS */
     body {
