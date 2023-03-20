@@ -105,23 +105,21 @@ footer {
 @media (min-width: 576px) {
 /* USAR BIEN GRID TEMPLATES AREAS */
     body {
+        display: grid;
         grid-template-areas:
-        "navegacion ftr"
-        "navegacion productos"
-        "navegacion productos"
-        "pie productos";
+        "navegacion ftr ftr"
+        "navegacion productos productos"
+        "navegacion productos productos"
+        "pie productos productos";
     }
 
-
-    /* ARREFLAR FTR PARA QUE SUBA AL LADO DEL ASIDE */
     .ftr{
         display:flex;
         flex-direction: column;
-        /* grid-template-rows: calc(100% - 210px); */   /* ES NECESARIO ? */
     }
     aside {
-        width: 30%;
-        height: 100vh;
+        width: 60%;
+        height: 100%;
     }
 
     .navegacion {
@@ -134,13 +132,27 @@ footer {
         display: flex;
         flex-direction: column;
         list-style: none;
+        gap: 10px;
     }
 
+    aside h2 {
+        padding: 20px;
+    }
+
+    aside ul li {
+        display: grid;
+    }
     .as-nav .fa-bars {
         display: none;
     }
-}
 
-@media (min-width: 996px) {
-    
+    footer {
+        display: flex;
+        width: 60% ;
+    }
+
+    /* .productos__producto {
+        display: grid;
+        grid-template-rows:1fr 1fr 1fr 1fr ;
+    } */
 }
