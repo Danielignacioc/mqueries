@@ -165,7 +165,7 @@ footer {
   }
 }
 
-@media(min-width:992px) {
+@media (min-width: 992px) {
   section {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
