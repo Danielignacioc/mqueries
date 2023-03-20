@@ -25,13 +25,12 @@ aside ul {
 }
 
 .as-nav h2 {
-  margin-right: 160px;
+  margin-right: 150px;
 }
 
 menu {
   grid-area: ftr;
   display: grid;
-  border: solid yellow 5px;
 }
 
 .ftr__busqueda {
@@ -50,14 +49,15 @@ menu {
 main {
   grid-area: productos;
   display: grid;
-  padding: 25px 40px;
+  padding-top: 15px;
+  margin-left: -130px;
 }
 
 .productos__producto {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 50px;
+  padding: 30px 20px;
   border: solid lightgray 1px;
   border-radius: 1%;
 }
@@ -81,13 +81,14 @@ main {
 }
 
 .btn:hover {
-  transition: 0.5s;
+  transition: .5s;
   background-color: #0b0349;
 }
 
 .productos__paginas {
   display: flex;
   flex-direction: row;
+  justify-self: center;
 }
 
 .productos__paginas th ul li {
