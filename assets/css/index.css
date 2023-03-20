@@ -107,13 +107,13 @@ footer {
     body {
         display: grid;
         grid-template-areas:
-        "navegacion ftr ftr"
-        "navegacion productos productos"
-        "navegacion productos productos"
-        "pie productos productos";
+        "navegacion ftr"
+        "navegacion productos"
+        "navegacion productos"
+        "pie productos";
     }
 
-    .ftr{
+    .ftr {
         display:flex;
         flex-direction: column;
     }
